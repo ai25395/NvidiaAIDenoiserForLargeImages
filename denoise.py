@@ -9,7 +9,10 @@ import cv2
 import os
 import datetime
 import sys
-
+#for larger images,you could set the var ‘ratio’ a larger int number.'ratio' means the image will be cut into ratio*ratio small images.
+#'delta' is the number of pixels overlapped at boundaries of every 2 small images.Usually,you don't need to change it.
+ratio = 8
+delta = 10
 filename = sys.argv[1]
 print('filename'+filename)
 dirr = os.path.dirname(__file__)+'\\pic\\'
@@ -19,10 +22,8 @@ print(src)
 imgType = '.'+filename.split('.',1)[1]
 img = cv2.imread(src)
 h,w,d = img.shape
-ratio = 4
 hs = [0]
 ws = [0]
-delta = 10
 for i in range(0,ratio):
     if i<ratio-1:
         hs.append(int(h/ratio)+hs[i])
