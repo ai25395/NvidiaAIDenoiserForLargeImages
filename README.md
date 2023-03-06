@@ -16,8 +16,6 @@ So,I write a python script which cut the image into small parts,use Denoiser to 
 3.Make a new directory called 'pic' in the 'Denoiser_v2.4' and put the image(for example: apple.png) you want to process into 'pic'  
 4.Open cmd or powershell, use 'cd' to go to 'Denoiser_v2.4',then use 'python denoise.py apple.png' to denoise the apple.png.  
 
-tip:make sure there are only English in the absolute path of the 'Denoiser_v2.4'
-
 
 
 
