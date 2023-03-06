@@ -1,5 +1,5 @@
 # NvidiaAIDenoiserForLargeImages
-By cutting a large image into parts to make NvidiaAIDenoiser(by DeclanRussell) work well
+By cutting a large image into parts to make NvidiaAIDenoiser(by DeclanRussell,https://declanrussell.com/portfolio/nvidia-ai-denoiser/) work better
 
 -----------------What is this for?-----------------  
 When using the NvidiaAIDenoiser(version2.4),I find that there will be a error listed below if you input a very large image(for me it's a 16450*7000 image).  
