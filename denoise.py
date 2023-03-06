@@ -15,7 +15,7 @@ ratio = 8
 delta = 10
 filename = sys.argv[1]
 print('filename'+filename)
-dirr = os.path.dirname(__file__)+'\\pic\\'
+dirr = '.\\pic\\'
 print(dirr)
 src = dirr+filename
 print(src)
