@@ -58,8 +58,9 @@ for i in range(0,ratio):
                 img0 = img[hs[i]-delta:hs[i+1]+delta,ws[j]-delta:ws[j+1],:]
             else:
                 img0 = img[hs[i]-delta:hs[i+1]+delta,ws[j]-delta:ws[j+1]+delta,:]
+        print('输出图像')
         cv2.imwrite(dirr +'im' + str(i)+'_'+str(j)+ imgType, img0)
-        os.system('Denoiser.exe -i '+dirr +'im' + str(i)+'_'+str(j)+'.png -o '+dirr +'imm' + str(i)+'_'+str(j)+imgType)  
+        os.system('Denoiser.exe -i '+dirr +'im' + str(i)+'_'+str(j)+imgType+' -o '+dirr +'imm' + str(i)+'_'+str(j)+imgType)  
         os.remove(dirr +'im' + str(i)+'_'+str(j)+ imgType)
 
         count += 1
@@ -99,9 +100,3 @@ print('%100 has been finished --------------------------------------------------
 nowTime = datetime.datetime.now()
 cv2.imwrite(dirr+'result_'+filename.split('.',1)[0]+imgType, newImg)
 print('success,result is '+dirr+'result_'+filename.split('.',1)[0]+imgType)
-
-        
-        
-        
-        
-        
